@@ -45,6 +45,14 @@ body {
   text-align: center;
 }
 
+button {
+  background-color: #08373b;
+  color: #51f1ff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #51f1ff;
+}
+
 nav {
   display: flex;
   align-items: center;
