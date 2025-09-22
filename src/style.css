@@ -7,6 +7,20 @@ header, about, contact, footer, p, h1, h2, .about-text, .letter, .icon, #contain
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "EXO", sans-serif;
+}
+
+p {
+  font-family: "shantell sans", cursive;
+}
+
+button {
+  font-family: "soloway", serif;
+}
+
 header {
   background-color: #08373b;
 }
@@ -95,12 +109,46 @@ h2 {
   color: #52ff99;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.contact-item svg {
+  flex-shrink: 0;
+}
+
+#Contact h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 .email {
   color: #52ff99;
 }
 
 .phone-number {
   color: #52ff99;
+}
+
+#About {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+#About h2 {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .about {
@@ -120,31 +168,25 @@ h2 {
   border-radius: 8px;
 }
 
-#container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
 #projects {
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-/* section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-} */
-
 #projects h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
   color: #52ff99;
+}
+
+.project {
+  padding: 1.5rem;
+  border-radius: 8px;
 }
 
 article {
