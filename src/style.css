@@ -35,6 +35,12 @@ body {
   width: 40px;
 }
 
+.icons {
+  height: 40px;
+  width: 40px;
+  display: block;
+}
+
 .icon {
   height: 40px;
   width: 40px;
@@ -157,6 +163,40 @@ h2 {
   gap: 2rem;
 }
 
+.about-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* .about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+} */
+
+.about-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.icons-text {
+  color: aliceblue;
+}
+
+/* .about-icons {
+  margin-bottom: 1rem;
+} */
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .about-text {
   flex: 1;
   color: azure;
@@ -232,4 +272,22 @@ footer {
   gap: 1rem;
   padding: 1rem 0;
   background-color: #08373b;
+}
+
+@media (max-width: 768px) {
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-text {
+    order: 1;
+  }
+
+  .selfie {
+    order: 2;
+  }
 }
